@@ -1,0 +1,8 @@
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\bin\Debug\lab_1.2.exe.config
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\bin\Debug\lab_1.2.exe
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\bin\Debug\lab_1.2.pdb
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\obj\Debug\lab_1.2.csproj.AssemblyReference.cache
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\obj\Debug\lab_1.2.csproj.CoreCompileInputs.cache
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\obj\Debug\lab_1.2.exe
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\obj\Debug\lab_1.2.pdb
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.2\obj\Debug\lab_1.2.exe.config

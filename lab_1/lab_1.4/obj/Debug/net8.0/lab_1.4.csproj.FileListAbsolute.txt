@@ -1,0 +1,14 @@
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\bin\Debug\net8.0\lab_1.4.exe
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\bin\Debug\net8.0\lab_1.4.deps.json
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\bin\Debug\net8.0\lab_1.4.runtimeconfig.json
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\bin\Debug\net8.0\lab_1.4.dll
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\bin\Debug\net8.0\lab_1.4.pdb
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.AssemblyInfoInputs.cache
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.AssemblyInfo.cs
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.csproj.CoreCompileInputs.cache
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.dll
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\refint\lab_1.4.dll
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.pdb
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\lab_1.4.genruntimeconfig.cache
+C:\Users\matilda\Desktop\лабы\oop\lab_1\lab_1\lab_1.4\obj\Debug\net8.0\ref\lab_1.4.dll
