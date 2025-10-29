@@ -1,313 +1,260 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 public partial class Vector
 {
-    public static int _objectCount = 0;
-    private static int nextId = 1;
-    private const int VersionInfo = 1;
-    public static string Version;
-
-    public static void PrintClassInfo()
-    {
-        Console.WriteLine("\nИнформация о классе Vector ");
-        Console.WriteLine($"Версия класса: {Version}");
-        Console.WriteLine($"Количество созданных объектов: {_objectCount}");
-    }
-
-    private int[] values;
-    private int size;
-    private int statusCode;
-    private readonly int id;
-
-    public int[] Values
-    {
-        get { return values; }
-        private set
-        {
-            values = value;
-            size = values?.Length ?? 0;
-        }
-    }
+    private readonly int _id;
+    private int[] _elements;
+    public const string CLASS_DESCRIPTION = "Это класс для работы с целочисленным вектором.";
+    private static int _objectCount = 0;
 
     public int Size
     {
-        get { return size; }
-        private set
-        {
-            if (value >= 0)
-            {
-                size = value;
-                Array.Resize(ref values, value);
-                this.StatusCode = 0;
-            }
-            else
-            {
-                this.StatusCode = -1;
-            }
-        }
-    }
-
-    public int StatusCode
-    {
-        get { return statusCode; }
-        private set { statusCode = value; }
+        get { return _elements.Length; }
     }
 
     public int Id
     {
-        get { return id; }
+        get { return _id; }
     }
 
-    public double Magnitude
+    public int ErrorCode
+    {
+        get;
+        private set;
+    }
+
+    public int this[int index]
     {
         get
         {
-            if (this.Size == 0) return 0.0;
-            long sumOfSquares = this.Values.Sum(v => (long)v * v);
-            return Math.Sqrt(sumOfSquares);
+            if (index >= 0 && index < Size)
+            {
+                ErrorCode = 0;
+                return _elements[index];
+            }
+            else
+            {
+                ErrorCode = -1;
+                return 0;
+            }
+        }
+        set
+        {
+            if (index >= 0 && index < Size)
+            {
+                _elements[index] = value;
+                ErrorCode = 0; 
+            }
+            else
+            {
+                ErrorCode = -2;
+            }
         }
     }
 
     static Vector()
     {
-        Version = $"Vector Class v{VersionInfo}";
+        _objectCount = 0;
+        Console.WriteLine("Статический конструктор Vector вызван.");
     }
 
     public Vector()
     {
+        _elements = new int[0];
+        _id = this.GetHashCode();
         _objectCount++;
-        id = HashVectorId(nextId++);
-        this.Values = new int[0];
-        this.StatusCode = 0;
     }
 
-    public Vector(int size) : this()
+    public Vector(int size)
     {
         if (size < 0)
         {
-            this.StatusCode = -1;
+            size = 0;
+            ErrorCode = -3;
+        }
+        _elements = new int[size];
+        _id = size.GetHashCode();
+        _objectCount++;
+    }
+
+    public Vector(int[] initialElements, int customId = 0)
+    {
+        if (initialElements != null)
+        {
+            _elements = initialElements;
         }
         else
         {
-            this.Size = size;
+            _elements = new int[0];
         }
+        _id = _elements.Length.GetHashCode() ^ customId.GetHashCode();
+        _objectCount++;
     }
 
-    public Vector(int size, int[] initialValues) : this()
+    private Vector(int fixedId, bool isPrivate)
     {
-        if (size < 0)
-        {
-            this.StatusCode = -1;
-        }
-        else if (initialValues.Length != size)
-        {
-            this.StatusCode = -2;
-        }
-        else
-        {
-            this.Values = (int[])initialValues.Clone();
-            this.StatusCode = 0;
-        }
-    }
-
-    private Vector(bool isPrivate) : this()
-    {
-        Console.WriteLine("Приватный конструктор вызван");
-    }
-
-    public Vector Add(int scalar)
-    {
-        if (this.Size == 0) return new Vector();
-
-        int[] newValues = this.Values.Select(v => v + scalar).ToArray();
-        return new Vector(this.Size, newValues);
+        _elements = new int[] { fixedId };
+        _id = fixedId;
+        _objectCount++;
+        Console.WriteLine("Вызван закрытый конструктор.");
     }
     
-    public Vector Multiply(int scalar)
+    public static Vector CreateVectorWithFixedId(int id)
     {
-        if (this.Size == 0) return new Vector();
-
-        int[] newValues = this.Values.Select(v => v * scalar).ToArray();
-        return new Vector(this.Size, newValues);
+        return new Vector(id, true);
     }
 
-    public bool TryModifyAndCalculate(int index, ref int element, out long sum)
+    public void GetSumAndProduct(ref int sum, out int product)
     {
-        sum = 0;
-        if (index < 0 || index >= this.Size)
+        product = 1;
+        for (int i = 0; i < Size; i++)
         {
-            this.StatusCode = -3;
-            return false;
+            sum += _elements[i];
+            product *= _elements[i];
         }
-
-        this.Values[index] = element;
-        element += 100; 
-
-        sum = this.Values.Sum(v => (long)v);
-        this.StatusCode = 0;
-        return true;
     }
 
-    public void AddNewElement(int newElement)
+    public bool Contains(int value)
     {
-        int newSize = this.Size + 1;
-        this.Size = newSize;
-        this.Values[newSize - 1] = newElement;
-    }
-
-    public void PrintVector()
-    {
-        if (this.Size == 0)
+        foreach (int element in _elements)
         {
-            Console.WriteLine("Vector is empty.");
-            return;
+            if (element == value) return true;
         }
-        Console.Write(string.Join(" -> ", this.Values));
-        Console.WriteLine(" -> null");
+        return false;
     }
 
-    public Vector CallPrivateConstructor()
+    public static void DisplayClassInfo()
     {
-        return new Vector(true);
-    }
-
-    private int HashVectorId(int vectorCount)
-    {
-        return vectorCount * 4284 % 10000;
-    }
-}
-
-public partial class Vector
-{
-    public override string ToString()
-    {
-        string elements = this.Size == 0
-            ? "[Empty]"
-            : $"[{string.Join(", ", this.Values)}]";
-
-        return $"Vector (ID: {this.Id}, Size: {this.Size}, |V|: {this.Magnitude:F2}) Elements: {elements} (Status: {this.StatusCode})";
+        Console.WriteLine("\n--- Информация о классе Vector ---");
+        Console.WriteLine(CLASS_DESCRIPTION);
+        Console.WriteLine($"Количество созданных объектов: {_objectCount}");
+        Console.WriteLine("---------------------------------");
     }
 
     public override bool Equals(object obj)
     {
-        if (obj == null || !(obj is Vector otherVector))
+        if (obj == null || this.GetType() != obj.GetType())
         {
             return false;
         }
-
+        Vector otherVector = (Vector)obj;
         if (this.Size != otherVector.Size)
         {
             return false;
         }
-
-        return this.Values.SequenceEqual(otherVector.Values);
+        for (int i = 0; i < this.Size; i++)
+        {
+            if (this._elements[i] != otherVector._elements[i])
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     public override int GetHashCode()
     {
-        int hash = this.Size.GetHashCode();
-
-        if (this.Values != null)
-        {
-            foreach (int value in this.Values)
-            {
-                hash = (hash * 397) ^ value.GetHashCode();
-            }
-        }
-
+        int hash = 17;
+        hash = hash * 23 + _id.GetHashCode();
+        hash = hash * 23 + Size.GetHashCode();
         return hash;
+    }
+
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append($"Vector (ID: {_id}, Size: {Size}, Error: {ErrorCode}) [");
+        sb.Append(string.Join(", ", _elements));
+        sb.Append("]");
+        return sb.ToString();
     }
 }
 
-
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("Тест класса Vector: ");
+        Console.WriteLine("---------- Задание 2: Создание и проверка объектов ----------");
 
-        Vector v1 = new Vector(3, new int[] { 1, 2, 3 });
-        Vector v2 = new Vector(3, new int[] { 10, 20, 30 });
-        Vector v_empty = new Vector();
+        Vector v1 = new Vector(new int[] { 10, 20, 0, 40 });
+        Vector v2 = new Vector(4);
+        Vector v3 = new Vector();
+        Vector v4 = new Vector(new int[] { 10, 20, 0, 40 });
+        Vector v5 = Vector.CreateVectorWithFixedId(777);
 
         Console.WriteLine($"v1: {v1}");
         Console.WriteLine($"v2: {v2}");
-        Console.WriteLine($"v3(Пустой вектор): {v_empty}");
+        Console.WriteLine($"v3: {v3}");
+        Console.WriteLine($"v4: {v4}");
+        Console.WriteLine($"v5: {v5}");
 
-        int scalar = 5;
-        Vector v_sum = v1.Add(scalar);
-        Vector v_prod = v2.Multiply(scalar);
+        Console.WriteLine($"\nРазмер v1: {v1.Size}");
+        Console.WriteLine($"Третий элемент v1: {v1[2]}");
+        v1[0] = 15;
+        Console.WriteLine($"Измененный v1: {v1}");
 
-        Console.WriteLine("\nТест операций:");
-        Console.WriteLine($"v1 + {scalar}: {v_sum}");
-        Console.WriteLine($"v2 * {scalar}: {v_prod}");
+        int nonExistentElement = v1[100];
+        Console.WriteLine($"Попытка чтения v1[100]. Значение: {nonExistentElement}, Код ошибки: {v1.ErrorCode}");
 
-        int refValue = 500;
-        v1.TryModifyAndCalculate(index: 1, ref refValue, out long totalSum);
+        Console.WriteLine($"\nСравнение v1 и v4 (Equals): {v1.Equals(v4)}");
+        Console.WriteLine($"Сравнение v2 и v4 (Equals): {v2.Equals(v4)}");
 
-        Console.WriteLine("\nТест ref и out:");
-        Console.WriteLine($"v1 после изменения: {v1}");
-        Console.WriteLine($"Новая сумма (out): {totalSum}");
-        Console.WriteLine($"refValue в Main: {refValue} (изменено)");
+        Console.WriteLine($"Тип объекта v1: {v1.GetType()}");
 
-        Vector v_copy = new Vector(3, new int[] { 1, 600, 3 }); 
+        int sum = 100;
+        int product;
+        v1.GetSumAndProduct(ref sum, out product);
+        Console.WriteLine($"\nСумма элементов v1 + 100 = {sum}");
+        Console.WriteLine($"Произведение элементов v1 = {product}");
 
-        Console.WriteLine("\nТест сравнения и статической информации:");
-        Console.WriteLine($"v1.Equals(v_copy): {v1.Equals(v_copy)} (Ожидается True)");
-        Console.WriteLine($"v1.GetHashCode() == v_copy.GetHashCode(): {v1.GetHashCode() == v_copy.GetHashCode()}");
+        Vector.DisplayClassInfo();
 
-        Vector.PrintClassInfo(); 
+        Console.WriteLine("\n---------- Задание 3: Работа с массивом объектов ----------");
 
-
-        Vector[] vectorArray = new Vector[]
-        {
-            new Vector(3, new int[] { 1, 2, 3 }),
-            new Vector(4, new int[] { 0, 5, 10, 0 }),
-            new Vector(2, new int[] { 1, 0 }),
-            new Vector(1, new int[] { 100 }),
-            new Vector(3, new int[] { -1, -1, -1 })
+        Vector[] vectors = {
+            new Vector(new int[] {1, -2, 3}),
+            new Vector(new int[] {5, 8}),
+            new Vector(new int[] {10, 0, -5}),
+            new Vector(new int[] {-1, -1}),
+            new Vector(new int[] {0, 12, 15}),
+            new Vector(new int[] {3, 4})
         };
 
-        Console.WriteLine("Задания с массивом:");
-
-        Console.WriteLine("\n   a) Список векторов, содержащих 0:");
-        var vectorsWithZero = vectorArray
-            .Where(v => v.Values != null && v.Values.Contains(0))
-            .ToList();
-
-        foreach (var v in vectorsWithZero)
+        Console.WriteLine("\nа) Список векторов, содержащих 0:");
+        foreach (var vec in vectors)
         {
-            Console.WriteLine(v);
+            if (vec.Contains(0)) Console.WriteLine(vec);
         }
 
-        Console.WriteLine("\n   b) Список векторов с наименьшим модулем:");
-        if (vectorArray.Length > 0)
+        Console.WriteLine("\nb) Вектор(ы) с наименьшим модулем:");
+        if (vectors.Length > 0)
         {
-            double minMagnitude = vectorArray.Min(v => v.Magnitude);
-
-            var smallestMagnitudeVectors = vectorArray
-                .Where(v => Math.Abs(v.Magnitude - minMagnitude) < 0.0001)
-                .ToList();
-
-            foreach (var v in smallestMagnitudeVectors)
-            {
-                Console.WriteLine(v);
-            }
+            double minMagnitude = vectors.Min(v => v.GetMagnitude());
             Console.WriteLine($"Наименьший модуль: {minMagnitude:F2}");
+            foreach (var vec in vectors)
+            {
+                if (Math.Abs(vec.GetMagnitude() - minMagnitude) < 1e-9)
+                {
+                    Console.WriteLine(vec);
+                }
+            }
         }
 
-        Console.WriteLine("\nАнонимный тип по образцу Vector:");
+        Console.WriteLine("\n---------- Задание 4: Анонимный тип ----------");
+
         var anonymousVector = new
         {
-            ID = 9999,
-            Size = 2,
-            Values = new int[] { 11, 22 },
-            Version = Vector.Version,
-            IsAnonymous = true
+            Id = v1.Id,
+            Size = v1.Size,
+            Elements = new int[] { 1, 1, 2, 3, 5 },
+            Description = "Анонимный тип, похожий на Vector"
         };
 
-        Console.WriteLine($"Анонимный объект (ToString): {anonymousVector}");
-        Console.WriteLine($"Тип анонимного объекта: {anonymousVector.GetType()}");
+        Console.WriteLine($"\nИнформация об анонимном типе:");
+        Console.WriteLine($"ID: {anonymousVector.Id}, Размер: {anonymousVector.Size}");
+        Console.WriteLine($"Описание: {anonymousVector.Description}");
+        Console.WriteLine($"Элементы: [{string.Join(", ", anonymousVector.Elements)}]");
     }
 }

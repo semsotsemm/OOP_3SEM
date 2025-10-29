@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|c:\\users\\user\\work_space\\laboratory_work\\oop_3sem\\lab_3\\laboratory_task_3\\laboratory_task_3\\\u0441onstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|solutionrelative:laboratory_task_3\\\u0441onstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|c:\\users\\user\\work_space\\laboratory_work\\oop_3sem\\lab_3\\laboratory_task_3\\laboratory_task_3\\indexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|solutionrelative:laboratory_task_3\\indexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|c:\\users\\user\\work_space\\laboratory_work\\oop_3sem\\lab_3\\laboratory_task_3\\laboratory_task_3\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|solutionrelative:laboratory_task_3\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|c:\\users\\user\\work_space\\laboratory_work\\oop_3sem\\lab_3\\laboratory_task_3\\laboratory_task_3\\nested\u0441lass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|solutionrelative:laboratory_task_3\\nested\u0441lass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|c:\\users\\user\\work_space\\laboratory_work\\oop_3sem\\lab_3\\laboratory_task_3\\laboratory_task_3\\overload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{899735A8-2532-45E4-9C2E-89D72AC3221B}|laboratory_task_3\\laboratory_task_3.csproj|solutionrelative:laboratory_task_3\\overload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 385,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "nested\u0421lass.cs",
+              "DocumentMoniker": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\nested\u0421lass.cs",
+              "RelativeDocumentMoniker": "laboratory_task_3\\nested\u0421lass.cs",
+              "ToolTip": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\nested\u0421lass.cs",
+              "RelativeToolTip": "laboratory_task_3\\nested\u0421lass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:57:27.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Indexer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Indexer.cs",
+              "RelativeDocumentMoniker": "laboratory_task_3\\Indexer.cs",
+              "ToolTip": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Indexer.cs",
+              "RelativeToolTip": "laboratory_task_3\\Indexer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:48:48.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Methods.cs",
+              "DocumentMoniker": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Methods.cs",
+              "RelativeDocumentMoniker": "laboratory_task_3\\Methods.cs",
+              "ToolTip": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Methods.cs",
+              "RelativeToolTip": "laboratory_task_3\\Methods.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:23:38.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Overload.cs",
+              "DocumentMoniker": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Overload.cs",
+              "RelativeDocumentMoniker": "laboratory_task_3\\Overload.cs",
+              "ToolTip": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\Overload.cs",
+              "RelativeToolTip": "laboratory_task_3\\Overload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T21:38:18.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u0421onstructors.cs",
+              "DocumentMoniker": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\\u0421onstructors.cs",
+              "RelativeDocumentMoniker": "laboratory_task_3\\\u0421onstructors.cs",
+              "ToolTip": "C:\\Users\\user\\work_space\\Laboratory_work\\OOP_3SEM\\lab_3\\laboratory_task_3\\laboratory_task_3\\\u0421onstructors.cs",
+              "RelativeToolTip": "laboratory_task_3\\\u0421onstructors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:08:29.566Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
