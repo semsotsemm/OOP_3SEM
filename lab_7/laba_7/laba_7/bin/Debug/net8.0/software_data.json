@@ -1,0 +1,28 @@
+[
+  {
+    "$type": "word",
+    "CurrentDocument": "Lab7_Report.docx",
+    "Version": "Word 2024",
+    "Author": {
+      "Fio": "Bill Gates",
+      "Department": "Microsoft"
+    }
+  },
+  {
+    "$type": "virus",
+    "VirusType": "Ransomware",
+    "Version": "X-Trojan",
+    "Author": {
+      "Fio": "Hacker1337",
+      "Department": "DarkNet"
+    }
+  },
+  {
+    "$type": "base",
+    "Version": "0.1 Beta",
+    "Author": {
+      "Fio": "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E",
+      "Department": "IT"
+    }
+  }
+]
