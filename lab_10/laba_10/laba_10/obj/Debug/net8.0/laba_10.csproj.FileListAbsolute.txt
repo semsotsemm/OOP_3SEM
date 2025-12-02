@@ -1,0 +1,15 @@
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\bin\Debug\net8.0\laba_10.exe
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\bin\Debug\net8.0\laba_10.deps.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\bin\Debug\net8.0\laba_10.runtimeconfig.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\bin\Debug\net8.0\laba_10.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\bin\Debug\net8.0\laba_10.pdb
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.AssemblyInfoInputs.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.AssemblyInfo.cs
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.csproj.CoreCompileInputs.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.sourcelink.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\refint\laba_10.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.pdb
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\laba_10.genruntimeconfig.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_10\laba_10\laba_10\obj\Debug\net8.0\ref\laba_10.dll
