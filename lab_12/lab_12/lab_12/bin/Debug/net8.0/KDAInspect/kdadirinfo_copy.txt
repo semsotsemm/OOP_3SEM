@@ -1,0 +1,20 @@
+Список папок и файлов диска C:\
+[DIR] C:\$RECYCLE.BIN
+[DIR] C:\$WinREAgent
+[DIR] C:\Documents and Settings
+[DIR] C:\inetpub
+[DIR] C:\Program Files
+[DIR] C:\Program Files (x86)
+[DIR] C:\ProgramData
+[DIR] C:\Recovery
+[DIR] C:\System Volume Information
+[DIR] C:\Users
+[DIR] C:\Windows
+[FILE] C:\$WINRE_BACKUP_PARTITION.MARKER
+[FILE] C:\appverifUI.dll
+[FILE] C:\DumpStack.log
+[FILE] C:\DumpStack.log.tmp
+[FILE] C:\pagefile.sys
+[FILE] C:\swapfile.sys
+[FILE] C:\syntactic_analysis.tx
+[FILE] C:\vfcompat.dll

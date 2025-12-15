@@ -1,0 +1,15 @@
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.AssemblyInfoInputs.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.AssemblyInfo.cs
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.csproj.CoreCompileInputs.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.sourcelink.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\bin\Debug\net8.0\lab_11.exe
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\bin\Debug\net8.0\lab_11.deps.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\bin\Debug\net8.0\lab_11.runtimeconfig.json
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\bin\Debug\net8.0\lab_11.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\bin\Debug\net8.0\lab_11.pdb
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\refint\lab_11.dll
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.pdb
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\lab_11.genruntimeconfig.cache
+C:\Users\user\work_space\Laboratory_work\OOP_3SEM\lab_11\lab_11\lab_11\obj\Debug\net8.0\ref\lab_11.dll

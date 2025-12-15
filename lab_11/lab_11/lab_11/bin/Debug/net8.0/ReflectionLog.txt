@@ -1,0 +1,230 @@
+﻿2. Создание объекта типа Product 
+Объект успешно создан с помощью Reflector.Create<Product>().
+
+
+2. Создание объекта типа Customer 
+Объект успешно создан с помощью Reflector.Create<Customer>().
+
+
+1.a. Имя сборки для класса Product 
+lab_11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+
+1.b. Наличие публичных конструкторов для класса Product 
+Результат: True
+
+
+1.c. Публичные методы класса Product (только объявленные) 
+[
+  "[Method] Int32 get_ProductId()",
+  "[Method] Void set_ProductId(Int32 value)",
+  "[Method] String get_Name()",
+  "[Method] Void UpdatePrice(Double newPrice)",
+  "[Method] String GetInfo(Int32 quantity)",
+  "[Method] Void LogInfo()"
+]
+
+
+1.d. Поля и свойства класса Product 
+[Field] Access: public Type: String Name: Category
+[Field] Access: private Type: Double Name: internalCost
+[Field] Access: private Type: Int32 Name: <ProductId>k__BackingField
+[Field] Access: private Type: String Name: <Name>k__BackingField
+[Property] Type: Int32 Name: ProductId (Read: True, Write: True)
+[Property] Type: String Name: Name (Read: True, Write: True)
+
+
+1.e. Интерфейсы класса Product 
+ILoggable
+
+
+1.a. Имя сборки для класса Customer 
+lab_11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+
+1.b. Наличие публичных конструкторов для класса Customer 
+Результат: True
+
+
+1.c. Публичные методы класса Customer (только объявленные) 
+[
+  "[Method] Int32 get_CustomerId()",
+  "[Method] Void set_CustomerId(Int32 value)",
+  "[Method] String get_FullName()",
+  "[Method] Void set_FullName(String value)",
+  "[Method] Void PlaceOrder(String itemName, Int32 quantity)"
+]
+
+
+1.d. Поля и свойства класса Customer 
+[Field] Access: private Type: Int32 Name: <CustomerId>k__BackingField
+[Field] Access: private Type: String Name: <FullName>k__BackingField
+[Property] Type: Int32 Name: CustomerId (Read: True, Write: True)
+[Property] Type: String Name: FullName (Read: True, Write: True)
+
+
+1.e. Интерфейсы класса Customer 
+
+
+1.a. Имя сборки для класса System.DateTime 
+System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+
+
+1.b. Наличие публичных конструкторов для класса System.DateTime 
+Результат: True
+
+
+1.c. Публичные методы класса System.DateTime (только объявленные) 
+[
+  "[Method] DateTime Add(TimeSpan value)",
+  "[Method] DateTime AddDays(Double value)",
+  "[Method] DateTime AddHours(Double value)",
+  "[Method] DateTime AddMilliseconds(Double value)",
+  "[Method] DateTime AddMicroseconds(Double value)",
+  "[Method] DateTime AddMinutes(Double value)",
+  "[Method] DateTime AddMonths(Int32 months)",
+  "[Method] DateTime AddSeconds(Double value)",
+  "[Method] DateTime AddTicks(Int64 value)",
+  "[Method] DateTime AddYears(Int32 value)",
+  "[Method] Int32 Compare(DateTime t1, DateTime t2)",
+  "[Method] Int32 CompareTo(Object value)",
+  "[Method] Int32 CompareTo(DateTime value)",
+  "[Method] Int32 DaysInMonth(Int32 year, Int32 month)",
+  "[Method] Boolean Equals(Object value)",
+  "[Method] Boolean Equals(DateTime value)",
+  "[Method] Boolean Equals(DateTime t1, DateTime t2)",
+  "[Method] DateTime FromBinary(Int64 dateData)",
+  "[Method] DateTime FromFileTime(Int64 fileTime)",
+  "[Method] DateTime FromFileTimeUtc(Int64 fileTime)",
+  "[Method] DateTime FromOADate(Double d)",
+  "[Method] Boolean IsDaylightSavingTime()",
+  "[Method] DateTime SpecifyKind(DateTime value, DateTimeKind kind)",
+  "[Method] Int64 ToBinary()",
+  "[Method] DateTime get_Date()",
+  "[Method] Int32 get_Day()",
+  "[Method] DayOfWeek get_DayOfWeek()",
+  "[Method] Int32 get_DayOfYear()",
+  "[Method] Int32 GetHashCode()",
+  "[Method] Int32 get_Hour()",
+  "[Method] DateTimeKind get_Kind()",
+  "[Method] Int32 get_Millisecond()",
+  "[Method] Int32 get_Microsecond()",
+  "[Method] Int32 get_Nanosecond()",
+  "[Method] Int32 get_Minute()",
+  "[Method] Int32 get_Month()",
+  "[Method] DateTime get_Now()",
+  "[Method] Int32 get_Second()",
+  "[Method] Int64 get_Ticks()",
+  "[Method] TimeSpan get_TimeOfDay()",
+  "[Method] DateTime get_Today()",
+  "[Method] Int32 get_Year()",
+  "[Method] Boolean IsLeapYear(Int32 year)",
+  "[Method] DateTime Parse(String s)",
+  "[Method] DateTime Parse(String s, IFormatProvider provider)",
+  "[Method] DateTime Parse(String s, IFormatProvider provider, DateTimeStyles styles)",
+  "[Method] DateTime Parse(ReadOnlySpan\u00601 s, IFormatProvider provider, DateTimeStyles styles)",
+  "[Method] DateTime ParseExact(String s, String format, IFormatProvider provider)",
+  "[Method] DateTime ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)",
+  "[Method] DateTime ParseExact(ReadOnlySpan\u00601 s, ReadOnlySpan\u00601 format, IFormatProvider provider, DateTimeStyles style)",
+  "[Method] DateTime ParseExact(String s, String[] formats, IFormatProvider provider, DateTimeStyles style)",
+  "[Method] DateTime ParseExact(ReadOnlySpan\u00601 s, String[] formats, IFormatProvider provider, DateTimeStyles style)",
+  "[Method] TimeSpan Subtract(DateTime value)",
+  "[Method] DateTime Subtract(TimeSpan value)",
+  "[Method] Double ToOADate()",
+  "[Method] Int64 ToFileTime()",
+  "[Method] Int64 ToFileTimeUtc()",
+  "[Method] DateTime ToLocalTime()",
+  "[Method] String ToLongDateString()",
+  "[Method] String ToLongTimeString()",
+  "[Method] String ToShortDateString()",
+  "[Method] String ToShortTimeString()",
+  "[Method] String ToString()",
+  "[Method] String ToString(String format)",
+  "[Method] String ToString(IFormatProvider provider)",
+  "[Method] String ToString(String format, IFormatProvider provider)",
+  "[Method] Boolean TryFormat(Span\u00601 destination, Int32\u0026 charsWritten, ReadOnlySpan\u00601 format, IFormatProvider provider)",
+  "[Method] Boolean TryFormat(Span\u00601 utf8Destination, Int32\u0026 bytesWritten, ReadOnlySpan\u00601 format, IFormatProvider provider)",
+  "[Method] DateTime ToUniversalTime()",
+  "[Method] Boolean TryParse(String s, DateTime\u0026 result)",
+  "[Method] Boolean TryParse(ReadOnlySpan\u00601 s, DateTime\u0026 result)",
+  "[Method] Boolean TryParse(String s, IFormatProvider provider, DateTimeStyles styles, DateTime\u0026 result)",
+  "[Method] Boolean TryParse(ReadOnlySpan\u00601 s, IFormatProvider provider, DateTimeStyles styles, DateTime\u0026 result)",
+  "[Method] Boolean TryParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style, DateTime\u0026 result)",
+  "[Method] Boolean TryParseExact(ReadOnlySpan\u00601 s, ReadOnlySpan\u00601 format, IFormatProvider provider, DateTimeStyles style, DateTime\u0026 result)",
+  "[Method] Boolean TryParseExact(String s, String[] formats, IFormatProvider provider, DateTimeStyles style, DateTime\u0026 result)",
+  "[Method] Boolean TryParseExact(ReadOnlySpan\u00601 s, String[] formats, IFormatProvider provider, DateTimeStyles style, DateTime\u0026 result)",
+  "[Method] DateTime op_Addition(DateTime d, TimeSpan t)",
+  "[Method] DateTime op_Subtraction(DateTime d, TimeSpan t)",
+  "[Method] TimeSpan op_Subtraction(DateTime d1, DateTime d2)",
+  "[Method] Boolean op_Equality(DateTime d1, DateTime d2)",
+  "[Method] Boolean op_Inequality(DateTime d1, DateTime d2)",
+  "[Method] Boolean op_LessThan(DateTime t1, DateTime t2)",
+  "[Method] Boolean op_LessThanOrEqual(DateTime t1, DateTime t2)",
+  "[Method] Boolean op_GreaterThan(DateTime t1, DateTime t2)",
+  "[Method] Boolean op_GreaterThanOrEqual(DateTime t1, DateTime t2)",
+  "[Method] Void Deconstruct(DateOnly\u0026 date, TimeOnly\u0026 time)",
+  "[Method] Void Deconstruct(Int32\u0026 year, Int32\u0026 month, Int32\u0026 day)",
+  "[Method] String[] GetDateTimeFormats()",
+  "[Method] String[] GetDateTimeFormats(IFormatProvider provider)",
+  "[Method] String[] GetDateTimeFormats(Char format)",
+  "[Method] String[] GetDateTimeFormats(Char format, IFormatProvider provider)",
+  "[Method] TypeCode GetTypeCode()",
+  "[Method] Boolean TryParse(String s, IFormatProvider provider, DateTime\u0026 result)",
+  "[Method] DateTime Parse(ReadOnlySpan\u00601 s, IFormatProvider provider)",
+  "[Method] Boolean TryParse(ReadOnlySpan\u00601 s, IFormatProvider provider, DateTime\u0026 result)",
+  "[Method] DateTime get_UtcNow()"
+]
+
+
+1.d. Поля и свойства класса System.DateTime 
+[Field] Access: private Type: UInt64 Name: _dateData
+[Property] Type: UInt64 Name: UTicks (Read: True, Write: False)
+[Property] Type: UInt64 Name: InternalKind (Read: True, Write: False)
+[Property] Type: DateTime Name: Date (Read: True, Write: False)
+[Property] Type: Int32 Name: Day (Read: True, Write: False)
+[Property] Type: DayOfWeek Name: DayOfWeek (Read: True, Write: False)
+[Property] Type: Int32 Name: DayOfYear (Read: True, Write: False)
+[Property] Type: Int32 Name: Hour (Read: True, Write: False)
+[Property] Type: DateTimeKind Name: Kind (Read: True, Write: False)
+[Property] Type: Int32 Name: Millisecond (Read: True, Write: False)
+[Property] Type: Int32 Name: Microsecond (Read: True, Write: False)
+[Property] Type: Int32 Name: Nanosecond (Read: True, Write: False)
+[Property] Type: Int32 Name: Minute (Read: True, Write: False)
+[Property] Type: Int32 Name: Month (Read: True, Write: False)
+[Property] Type: Int32 Name: Second (Read: True, Write: False)
+[Property] Type: Int64 Name: Ticks (Read: True, Write: False)
+[Property] Type: TimeSpan Name: TimeOfDay (Read: True, Write: False)
+[Property] Type: Int32 Name: Year (Read: True, Write: False)
+
+
+1.e. Интерфейсы класса System.DateTime 
+System.IComparable
+System.ISpanFormattable
+System.IFormattable
+System.IConvertible
+System.IComparable`1[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+System.IEquatable`1[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+System.Runtime.Serialization.ISerializable
+System.ISpanParsable`1[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+System.IParsable`1[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+System.IUtf8SpanFormattable
+
+
+1.f. Методы класса Product, содержащие параметр типа Int32 
+set_ProductId
+GetInfo
+
+
+1.f. Методы класса Customer, содержащие параметр типа String 
+set_FullName
+PlaceOrder
+
+
+1.g. Вызов метода UpdatePrice на объекте Product 
+Источник параметров: file. Успешно вызван. Возвращаемое значение: void/null
+
+
+1.g. Вызов метода PlaceOrder на объекте Customer 
+Источник параметров: generate. Успешно вызван. Возвращаемое значение: void/null
+
+
