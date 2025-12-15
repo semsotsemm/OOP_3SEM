@@ -1,0 +1,24 @@
+[
+  {
+    "MineCount": 50,
+    "CurrentLevel": 1,
+    "SpentTime": 999,
+    "IsLicensed": true,
+    "Version": "Pro-7.0",
+    "Developer": {
+      "CompanyName": "DevApps",
+      "DeveloperName": "Ivan"
+    }
+  },
+  {
+    "MineCount": 10,
+    "CurrentLevel": 1,
+    "SpentTime": 0,
+    "IsLicensed": true,
+    "Version": "Lite-3.0",
+    "Developer": {
+      "CompanyName": "FreeSoft",
+      "DeveloperName": "Anon"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>Pro-7.0</Version>
+  <Developer>
+    <CompanyName>DevApps</CompanyName>
+    <DeveloperName>Ivan</DeveloperName>
+  </Developer>
+  <SpentTime>999</SpentTime>
+  <IsLicensed>true</IsLicensed>
+  <CurrentLevel>1</CurrentLevel>
+  <MineCount>50</MineCount>
+</Sapper>
